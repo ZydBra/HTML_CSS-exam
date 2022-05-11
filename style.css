@@ -74,3 +74,42 @@ header a:last-child {
     justify-content: space-between;
     margin: 6rem 0;
 }
+
+.nft {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nft-kortele {
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+}
+
+.serija {
+    color: rgb(255, 128, 57);
+}
+
+.serija, .bid {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bid, .numeris, .dienos {
+    color: rgb(119, 119, 119);
+}
+
+.pavadinimas, .kaina {
+    color: black;
+    font-weight: bold;
+}
+.nft-elementas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+}
+.nft-elementas p {
+    margin: 0rem;
+}
+.nft-elementas img {
+    margin-left: 2rem;
+}
