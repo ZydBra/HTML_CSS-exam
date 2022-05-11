@@ -1,0 +1,36 @@
+html {
+    font-family: roboto;
+  }
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.karkasas {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgb(0,0,0,0.2);
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    padding: 10px;
+}
+
+header a:last-child {
+    color: rgb(255, 94, 171);
+}
