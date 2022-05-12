@@ -225,13 +225,14 @@ section:nth-of-type(5) {
 }
 
 @media screen and (max-width: 764px) {
-    
+
     .karkasas {
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 1rem;
     }
 
     header {
         margin-bottom: 0;
+        padding-right: 1rem;
     }
 
     header nav a {
@@ -242,6 +243,14 @@ section:nth-of-type(5) {
         display: block;
         font-size: 2rem;
         color: rgb(119, 119, 119);
+    }
+    
+    .signup-container {
+        overflow-x: hidden;
+    }
+
+    .signup-container:first-of-type {
+        align-items: flex-start;
     }
 
     .signup-container-elementas img {
@@ -265,7 +274,8 @@ section:nth-of-type(5) {
     }
 
     .sekcija-su-fonu {
-        margin: 1rem -1rem 1rem -2rem;
+        margin: 1rem 0rem 1rem -2rem;
+        padding-right: 1rem;
     }
 
     .sekcija-ikonos img:nth-of-type(4) {
@@ -277,6 +287,7 @@ section:nth-of-type(5) {
         flex-wrap: wrap;
         justify-content: space-between;
         row-gap: 2rem;
+        padding-right: 1rem;
     }
 
     .nft {
