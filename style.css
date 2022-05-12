@@ -5,25 +5,32 @@ html {
 
 body {
     background-color: rgb(238, 238, 238);
+    padding: 1rem 0rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
 }
 
 .karkasas {
-    width: 64rem;
-    margin: 1rem auto;
+    max-width: 64rem;
+    margin: auto;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 1px 1px 5px rgb(0,0,0,0.2);
-    padding: 5rem;
+    padding: 3.5rem 3.5rem 1rem 3.5rem;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 header img {
-    width: 15%;
+    width: 10rem;
 }
 
 header a {
@@ -32,52 +39,91 @@ header a {
     padding: 10px;
 }
 
-header a:last-child {
+header a:hover {
     color: rgb(255, 94, 171);
+}
+
+header a:last-child, .signup-container h5 {
+    color: rgb(255, 94, 171);
+}
+
+header a:last-child:hover {
+    color: rgb(119, 119, 119);
 }
 
 .signup-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 30rem;
 }
-.signup-container img {
-   width: 30rem;
-   margin: auto;
+
+.signup-container-elementas:first-child {
+    flex: 40%;
+}
+
+.signup-container-elementas:last-child {
+    display: flex;
+    justify-content: center;
+    flex:60%;
+    align-items: flex-end;
+}
+
+.signup-container-elementas img {
+    height: 38rem;
+}
+
+.signup-container h5 {
+    padding-top: 4rem;
+}
+
+.signup-container h1 {
+    font-size: 4.5rem;
+    margin: 2rem 0;
+}
+.signup-container p {
+    color: rgb(85, 85, 85);
+    padding-bottom: 2rem;
+}
+
+button {
+    padding: 1rem;
+    margin-bottom: 3rem;
+    border: 4px, solid transparent;
+    width: 9rem;
+    border-radius: 2rem;
+    background-color: white;
+    border-image: linear-gradient(#f63c80, #a3c984) 30%;
 }
 
 .sekcija-su-fonu {
     background-image: url(background.svg);
     height: 16rem;
-    width: 64rem;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    
 }
 
 .sekcija-su-fonu p {
     padding-left: 3rem;
     padding-bottom: 2rem;
-
 }
 
 .sekcija-su-fonu h2{
     padding-left: 3rem;
-    font-size: 2rem;
-    font-weight: normal;
 }
 
 .sekcija-ikonos {
-    display: flex;
-    justify-content: space-between;
+    text-align-last: justify;
     margin: 6rem 0;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .nft {
     display: flex;
     justify-content: space-between;
+    margin: 3rem 0;
 }
 
 .nft-kortele {
@@ -102,14 +148,28 @@ header a:last-child {
     color: black;
     font-weight: bold;
 }
+
 .nft-elementas {
     display: flex;
     justify-content: space-between;
     padding: 0.3rem 1rem;
 }
+
 .nft-elementas p {
     margin: 0rem;
 }
-.nft-elementas img {
-    margin-left: 2rem;
+
+section:nth-of-type(5) {
+    border-top: 2px solid rgb(238, 238, 238);
+    border-bottom: 2px solid rgb(238, 238, 238);
+    padding-top: 4rem;
+}
+
+#nft-foto {
+    height: 23rem;
+}
+
+.signup-container-elementas h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
 }
