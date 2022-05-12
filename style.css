@@ -34,17 +34,21 @@ header img {
     width: 10rem;
 }
 
-header a {
+#list {
+    display: none;
+}
+
+header nav a {
     text-decoration: none;
     color: rgb(85, 85, 85);
     padding: 10px;
 }
 
-header a:hover {
+header nav a:hover {
     color: rgb(255, 94, 171);
 }
 
-header a:last-child, .signup-container h5 {
+header nav a:last-child, .signup-container h5 {
     color: rgb(255, 94, 171);
 }
 
@@ -79,6 +83,7 @@ header a:last-child:hover {
     font-size: 4.5rem;
     margin: 2rem 0;
 }
+
 .signup-container p {
     color: rgb(85, 85, 85);
     padding-bottom: 2rem;
@@ -87,7 +92,8 @@ header a:last-child:hover {
 button {
     padding: 1rem;
     margin-bottom: 3rem;
-    border: 5px, outset rgb(239, 93, 93);
+    border: 5px inset;
+    border-color: rgb(241, 66, 177);
     width: 9rem;
     border-radius: 2rem;
     background-color: white;
@@ -124,6 +130,7 @@ span {
     display: flex;
     justify-content: space-between;
     margin: 3rem 0;
+    column-gap: 1rem;
 }
 
 .nft-kortele {
@@ -215,4 +222,80 @@ section:nth-of-type(5) {
 
 .footer-nuorodos h5 {
     color: rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 764px) {
+    
+    .karkasas {
+    padding: 1rem 1rem 1rem 1rem;
+    }
+
+    header {
+        margin-bottom: 0;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    #list {
+        display: block;
+        font-size: 2rem;
+        color: rgb(119, 119, 119);
+    }
+
+    .signup-container-elementas img {
+        height: 25rem;
+        overflow: visible;
+    }
+
+    .signup-container h1 {
+        font-size: 2rem;
+    }
+
+    .signup-container-elementas:first-child {
+        flex: 60%;
+    }
+
+    .signup-container-elementas:last-child {
+        display: flex;
+        justify-content: center;
+        flex:40%;
+        align-items: flex-end;
+    }
+
+    .sekcija-su-fonu {
+        margin: 1rem -1rem 1rem -2rem;
+    }
+
+    .sekcija-ikonos img:nth-of-type(4) {
+        display: none;
+    }
+
+    .sekcija-ikonos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+    }
+
+    .nft {
+        overflow-x: scroll;
+    }
+
+    .footer-karkasas {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .footer-nuorodos {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 4rem;
+        margin-top: 3rem;
+    
+    }
+    .footer-apatine-juosta div:nth-of-type(2) {
+        display: none;
+    }
 }
