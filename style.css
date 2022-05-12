@@ -1,0 +1,312 @@
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight:300;
+  }
+
+body {
+    background-color: rgb(238, 238, 238);
+    padding: 1rem 0rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.karkasas {
+    max-width: 64rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px rgb(0,0,0,0.2);
+    padding: 3.5rem 3.5rem 1rem 3.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+header img {
+    width: 10rem;
+}
+
+#list {
+    display: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    padding: 10px;
+}
+
+header nav a:hover {
+    color: rgb(255, 94, 171);
+}
+
+header nav a:last-child, .signup-container h5 {
+    color: rgb(255, 94, 171);
+}
+
+header a:last-child:hover {
+    color: rgb(119, 119, 119);
+}
+
+.signup-container {
+    display: flex;
+}
+
+.signup-container-elementas:first-child {
+    flex: 40%;
+}
+
+.signup-container-elementas:last-child {
+    display: flex;
+    justify-content: center;
+    flex:60%;
+    align-items: flex-end;
+}
+
+.signup-container-elementas img {
+    height: 38rem;
+}
+
+.signup-container h5 {
+    padding-top: 4rem;
+}
+
+.signup-container h1 {
+    font-size: 4.5rem;
+    margin: 2rem 0;
+}
+
+.signup-container p {
+    color: rgb(85, 85, 85);
+    padding-bottom: 2rem;
+}
+
+button {
+    padding: 1rem;
+    margin-bottom: 3rem;
+    border: 5px inset;
+    border-color: rgb(241, 66, 177);
+    width: 9rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.sekcija-su-fonu {
+    background-image: url(background.svg);
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.sekcija-su-fonu p {
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+
+.sekcija-su-fonu h2{
+    padding-left: 3rem;
+}
+
+.sekcija-ikonos {
+    text-align-last: justify;
+    margin: 6rem 0;
+}
+
+span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nft {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    column-gap: 1rem;
+}
+
+.nft-kortele {
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+}
+
+.serija {
+    color: rgb(255, 128, 57);
+}
+
+.serija, .bid {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bid, .numeris, .dienos {
+    color: rgb(119, 119, 119);
+}
+
+.pavadinimas, .kaina {
+    color: black;
+    font-weight: bold;
+}
+
+.nft-elementas {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+}
+
+.nft-elementas p {
+    margin: 0rem;
+}
+
+section:nth-of-type(5) {
+    border-top: 2px solid rgb(238, 238, 238);
+    border-bottom: 2px solid rgb(238, 238, 238);
+    padding-top: 4rem;
+}
+
+#nft-foto {
+    height: 23rem;
+}
+
+.signup-container-elementas h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.footer-apatine-juosta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-apatine-juosta p, .footer-logo-ikonos a {
+    color: rgb(159, 159, 159);
+}
+
+.footer-karkasas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.footer-logo-ikonos {
+    flex: 50%;
+}
+
+.footer-ikonos {
+    width: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nuorodos {
+    display: flex;
+    justify-content: space-between;
+    flex: 50%;
+}
+
+.footer-nuorodos a {
+    display: block;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    padding-bottom: 0.5rem;
+}
+
+.footer-nuorodos h5 {
+    color: rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 764px) {
+
+    .karkasas {
+    padding: 1rem 0rem 1rem 1rem;
+    }
+
+    header {
+        margin-bottom: 0;
+        padding-right: 1rem;
+    }
+
+    header nav a {
+        display: none;
+    }
+
+    #list {
+        display: block;
+        font-size: 2rem;
+        color: rgb(119, 119, 119);
+    }
+    
+    .signup-container {
+        overflow-x: hidden;
+    }
+
+    .signup-container:first-of-type {
+        align-items: flex-start;
+    }
+
+    .signup-container-elementas img {
+        height: 25rem;
+        overflow: visible;
+    }
+
+    .signup-container h1 {
+        font-size: 2rem;
+    }
+
+    .signup-container-elementas:first-child {
+        flex: 60%;
+    }
+
+    .signup-container-elementas:last-child {
+        display: flex;
+        justify-content: center;
+        flex:40%;
+        align-items: flex-end;
+    }
+
+    .sekcija-su-fonu {
+        margin: 1rem 0rem 1rem -2rem;
+        padding-right: 1rem;
+    }
+
+    .sekcija-ikonos img:nth-of-type(4) {
+        display: none;
+    }
+
+    .sekcija-ikonos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+        padding-right: 1rem;
+    }
+
+    .nft {
+        overflow-x: scroll;
+    }
+
+    .footer-karkasas {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .footer-nuorodos {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 4rem;
+        margin-top: 3rem;
+    
+    }
+    .footer-apatine-juosta div:nth-of-type(2) {
+        display: none;
+    }
+}
